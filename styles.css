@@ -1,0 +1,56 @@
+.red-target {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: dashed 2px black;
+    margin: 100px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 350px;
+    height: 150px;
+}
+
+table,
+td {
+    border: solid 1px black;
+}
+
+.colored td:nth-child(odd) {
+    background-color: yellow;
+}
+
+.purple-box-container {
+    margin-top: 50px;
+}
+
+.purple-block{
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    border: solid 2px black;
+    padding: 2px 2px 0px 2px;
+}
+
+
+.purple-block div:nth-child(1) {
+    background-color: purple;
+    height: 50%;
+    width: 30%;
+    margin-bottom: 2px;
+}
+
+.purple-block div:nth-child(2) {
+    background-color: purple;
+    height: 50%;
+    width: 70%;
+}
+
+.purple-block:nth-child(2) div:nth-child(1){
+    margin: 0 0 0 auto;
+    width: 80%;
+}
+.purple-block:nth-child(2) div:nth-child(2){
+    width: 20%;
+}
