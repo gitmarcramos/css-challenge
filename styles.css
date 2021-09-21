@@ -1,10 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+
+.first-box {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-bottom: 100px;
+    border: solid 2px #333;
+}
+
 .red-target {
     width: 100px;
     height: 100px;
     background-color: red;
     border: dashed 2px black;
-    margin: 100px;
-    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) 
 }
 
 table {
@@ -25,7 +39,7 @@ td {
     margin-top: 50px;
 }
 
-.purple-block{
+.purple-block {
     margin-top: 10px;
     width: 300px;
     height: 50px;
@@ -47,10 +61,60 @@ td {
     width: 70%;
 }
 
-.purple-block:nth-child(2) div:nth-child(1){
+.purple-block:nth-child(2) div:nth-child(1) {
     margin: 0 0 0 auto;
     width: 80%;
 }
-.purple-block:nth-child(2) div:nth-child(2){
+
+.purple-block:nth-child(2) div:nth-child(2) {
     width: 20%;
 }
+
+.inline-wrapper, .flex-wrapper {
+    width: 300px;
+    height: 100px
+}
+
+.inline-wrapper .row {
+    width: 100%;
+    background-color: yellow;
+    font-size: 0;
+    height: 50%;
+}
+
+.inline-wrapper .row-children {
+    display: inline-block;
+    border: 1px solid black;
+    font-size: 12px;
+    height: 100%;
+}
+
+.inline-wrapper .row:nth-child(2) {
+    background-color: blue;
+}
+
+
+
+.flex-wrapper{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.flex-row {
+    width: 100%;
+    display: flex;
+    flex: 1;
+}
+
+.flex-row .row-children{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+    border: solid 1px #333;
+    background-color: yellowgreen;
+}
+
